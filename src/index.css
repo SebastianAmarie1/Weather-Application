@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.app{
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 360px;
+  height: 800px;
+  border-width: thin;
+  overflow:hidden;
+  display:block;
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  font-family: 'Nunito';
+}
+
+#sunnyApp{
+  background-image: url(Images/SunnyBackground.png);
+}
+
+#defaultApp{
+  background-image: url(Images/DefaultBackground.png);
+}
+
+#rainyApp{
+  background-image: url(Images/RainBackground.png);
+}
+
+#cloudyApp{
+  background-image: url(Images/CloudBackground.png);
+}
+
+#snowApp{
+  background-image: url(Images/SnowBackground.png);
+}
+
+#mistApp{
+  background-image: url(Images/MistBackground.png);
+}
+
+#thunderApp{
+  background-image: url(Images/ThunderstormBackground.png);
+}
+
+.home{
+  width: 360px;
+  height: 800px;
+}
+
+.home-rect{
+  position: absolute;
+  width: 265px;
+  height: 40px;
+  left: 100px;
+  top: 442px;
+  left: 70px;  
+
+
+  opacity: 65%;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+}
+
+.home-logo{
+  position:absolute;
+  left: 118px;
+  top: 292px;
+  width: 130px;
+  height: 143px;
+}
+
+.home-location{
+  height: 70px;
+  position: relative;
+  top: 420px;
+
+}
+
+
+.thisWeekSection{
+  position: relative;
+  height: 428px;
+  top: 370px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.DateWidget{
+  position: absolute;
+  height: 30px;
+  left: 12px;
+  top: 425px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 0%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.025em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Widget h3 {
+  text-align: center;
+  margin-bottom: 7px;
+
+  font-style: normal;
+  font-weight: 6000;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.025em;
+
+  color: #000000;
+}
+.Widget h2 {
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+
+}
+.Widget h1{
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+}
+
+.Widget{
+  position: relative;
+  width: 281px;
+  height: 50px;
+  left: 60px;
+  top:50px;
+  display: block;
+  margin-bottom: 10px;
+  
+
+}
+.Widgetbar{
+  position: absolute;
+  width: 281px;
+  height: 50px;
+  
+  opacity: 65%;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+}
+.DateWidget{
+  position: absolute;
+  height: 20px;
+  left: -45px;
+  top: 17px;
+
+}
+.ImageWidget{
+  position: absolute;
+  left: 18px;
+  top: 4px;
+}
+
+.CurrentTmpWidget{
+  position: absolute;
+  width: 39px;
+  height: 20px;
+  left: 10px;
+  top: 26px;
+}
+
+.RainTWidget{
+  position: absolute;
+  width: 41px;
+  height: 13px;
+  left: 55px;
+  top: 5px;
+}
+
+.WindTWidget{ 
+  position: absolute;
+  width: 33px;
+  height: 15px;
+  left: 106px;
+  top: 5px;
+}
+
+.SoilTWidget{
+  position: absolute;
+  width: 55px;
+  height: 15px;
+  left: 145px;
+  top: 5px;
+
+}
+
+.MoistTWidget{
+  position: absolute;
+  width: 73px;
+  height: 13px;
+  left: 195px;
+  top: 5px;
+}
+
+.todayWidget{
+  position: relative;
+  left: 19px;
+  top: 197px;
+}
+
+.btn {
+  position: absolute;
+  width: 322px;
+  height: 169px;
+
+
+  opacity: 65%;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+}
+
+.todayWidget h3 {
+  text-align: center;
+  margin-bottom: 7px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+.todayWidget h2 {
+  text-align: center;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  color: #000000;
+}
+.ImageButton{
+  position: absolute;
+  left: 20px;
+  top: 15px;
+
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 150px;
+}
+.Tmp{
+  position: absolute;
+  left: 40px;
+  top: 110px;
+}
+.MoistT{
+  position: absolute;
+  left: 220px;
+  top: 95px;
+}
+.SoilT{
+  position: absolute;
+  width: 84px;
+  height: 18px;
+  left: 120px;
+  top: 95px;
+}
+.WindT{
+  position: absolute;
+  left: 225px;
+  top: 20px;
+}
+.RainT{
+  position: absolute;
+  left: 125px;
+  top: 20px;
+}
+.LineH{
+  position: absolute;
+  width: 178px;
+  height: 0px;
+  left: 125px;
+  top: 80px;
+  opacity : 0.6;
+  border: 0.1px solid #000000;
+}
+.Line{
+  position: absolute;
+  width: 129px;
+  height: 0;
+  left: 145px;
+  top: 80px;
+
+  opacity : 0.6;
+  border: 0.1px solid #000000;
+  transform: rotate(-90deg);
+}
+
+.TBtn{
+  position: absolute;
+  top:148px;
+  left:201.5px;
+  color: black;
+}
+
+.TBtn a{
+  color: black;
+}
+
+.TBRtn{
+  position: absolute;
+  top: 17px;
+  left: 258px;
+}
+
+.TBRtn a{
+  color: black;
+}
+
+
+::placeholder { 
+  color: black;
+}
+input:focus::placeholder { 
+  opacity: 0;
+}
+
+.location {
+  position: absolute;
+  width: 181px;
+  height: 20px;
+  left: 105px;
+  top: 32px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+  border: none;
+  background: none;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.locationIcon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 76px;
+  top: 31px;
+
+}
+
+.locTBtn *{
+  position: absolute;
+  right: 22px;
+  top: 15px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.thisWeek {
+  position: absolute;
+  width: 92px;
+  height: 20px;
+  left: 86px;
+  top: 89px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+  cursor: pointer;
+}
+
+
+.threeMonth {
+  position: absolute;
+  width: 75px;
+  height: 20px;
+  left: 199px;
+  top: 89px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+  cursor: pointer;
+}
+
+.active{
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  border-radius: 1.5px;
+}
+
+.appLine{
+  position: absolute;
+  width: 15px;
+  height: 0px;
+  left: 180px;
+  top: 98px;
+  
+  border: 0.1px solid #000000;
+  transform: rotate(-90deg);
+}
+
+.logo{
+  position: absolute;
+  left: 80px;
+  top: 150px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo-hourly{
+  position: absolute;
+  left: 62px;
+  top: 103px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.tW{
+  position: absolute;
+  width: 151px;
+  height: 35px;
+  left: 118px;
+  top: 150px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.045em;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.todayTime{
+  position: absolute;
+  width: 192px;
+  height: 28px;
+  left: 98px;
+  top: 171px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.045em;
+
+}
+
+.weekTitle{
+  position: absolute;
+  width: 180px;
+  height: 26px;
+  left: 95px;
+  top: 10px;
+
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 0.045em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.monthWidget{
+  position: relative;
+  top: 10px;
+  margin-bottom: 80px;
+}
+
+.month{
+  position: absolute;
+  width: 205px;
+  height: 30px;
+  left: 77px;
+
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.075em;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nextMonth{
+  margin-top: 65px;
+}
+
+.navbar {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.menu-bars {
+  font-size: 2rem;
+  color: black;
+}
+
+.nav-menu {
+  background-color: #060b26;
+  width: 250px;
+  height: 800px;
+  position: absolute;
+  left: -100%;
+  transition: 850ms;
+  z-index: 2;
+  top:0px;
+}
+
+.nav-menu.active {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: green;
+}
+
+
+.navbar-toggle {
+  background-color: #060b26;
+  width: 100%;
+  height: 80px;
+  }
+
+.menu-cross{
+  position:absolute;
+  color: red;
+  top: 20px;
+  left: 20px;
+}
+
+.backArrow *{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 25px;
+  color: black;
+}
+
+.hourlyRect{
+  position: absolute;
+  width: 315px;
+  height: 461px;
+  left: 22px;
+  top: 189px;
+  
+  background: #C4C4C4;
+  mix-blend-mode: hard-light;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+}
+.hourlyTitles{
+  position: absolute;
+  width: 300px;
+  height: 32px;
+  left: 106px;
+  top: 208px;
+
+  color: #000000;
+}
+
+.hourlyTitles h2{
+  display: inline;
+  margin-right: 20px;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.045em;
+}
+
+.hourlyValues{
+  position: absolute;
+  width: 300px;
+  height: 32px;
+  left: 93px;
+  top: 25px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.045em;
+
+  color: #000000;
+}
+.hourlyValues h2{
+  display: inline;
+  margin-right: 55px;
+}
+
+.hourly-title{
+  position: absolute;
+  width: 159px;
+  height: 28px;
+  left: 109px;
+  top: 102px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.045em;
+}
+
+.hourly-date{
+  position: absolute;
+  width: 221px;
+  height: 27px;
+  left: 78px;
+  top: 130px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.045em;
+}
+
+
+.CurrentTimeWidget{
+  position: absolute;
+  width: 45px;
+  height: 22px;
+  left: 10px;
+  top: 35px;
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-align: center;
+  letter-spacing: 0.045em;
+
+  color: #000000;
+}
+.hourlyImageWidget{
+  position: absolute;
+  left: 15px;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+  
+}
+.hourWeather{
+  position: relative;
+  width: 312px;
+  height: 65px;
+  left: 25px;
+  top: 240px;
+}
+
+.hourly-titleD{
+  position: absolute;
+  width: 220px;
+  height: 28px;
+  left: 98px;
+  top: 102px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.045em;
+}
+
+.attributesDesc{
+  position: absolute;
+  left: 44px;
+  top: 330px;
+}
+.attributesDesc h3{
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.045em;
+}
+
+.valuesDesc{
+  position: absolute;
+  left: 260px;
+  top: 330px;
+}
+.valuesDesc h3{
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.045em;
+}
+
+.DescImageWidget{
+  position: absolute;
+  left: 143px;
+  top: 194px;
+
+  width: 70px;
+  height: 70px;
+}
+
+.descTemperature{
+  position: absolute;
+  width: 360px;
+  height: 28px;
+  left: 0px;
+  top: 260px;
+  
+  color: #000000;
+}
+
+.descTemperature h3{
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.075em;
+}
+
+.good img{
+  position: absolute;
+  left: 31px;
+  top: 374px;
+}
+
+.good h2{
+  position: absolute;
+  left: 100px;
+  top: 372px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+}
+
+.good h3{
+  position: absolute;
+  width: 182px;
+  height: 53px;
+  left: 100px;
+  top: 400px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+}
+
+.normal img{
+  position: absolute;
+  left: 38px;
+  top: 480px;
+}
+
+.normal h2{
+  position: absolute;
+  left: 100px;
+  top: 471px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+}
+
+.normal h3{
+  position: absolute;
+  width: 182px;
+  height: 53px;
+  left: 100px;
+  top: 500px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+}
+
+.bad img{
+  position: absolute;
+  left: 33px;
+  top: 580px;
+
+}
+
+.bad h2{
+  position: absolute;
+  width: 161px;
+  height: 24px;
+  left: 100px;
+  top: 580px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+}
+
+.bad h3{
+  position: absolute;
+  width: 182px;
+  height: 53px;
+  left: 100px;
+  top: 610px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+}
+
+.suggestionRect{
+  position: absolute;
+  width: 315px;
+  height: 550px;
+  left: 22px;
+  top: 189px;
+  
+  background: #C4C4C4;
+  mix-blend-mode: hard-light;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+}
